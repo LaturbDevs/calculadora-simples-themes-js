@@ -1,0 +1,136 @@
+/* Code Made By LaturbDevs | Vitor Almeida*/
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #aaa;
+  transition: background-color 0.5s ease;
+
+}
+.calculator {
+  background-color: #222;
+  transition: background-color 0.5s ease;
+  border-radius: 20px;
+  width: 400px;
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  gap: 2px;
+  padding: 12px;
+}
+.display {
+  grid-row: -1;
+  grid-column: 1 / 5;
+  background-color: #444;
+  transition: background-color 0.5s ease;
+  padding: 22px;
+  font-size: 2.2rem;
+  border: none;
+  border-radius: 5px;
+}
+.btn {
+  font-size: 2rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #444;
+  transition: background-color 0.5s ease;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+}
+.mode-toggle {
+  grid-row: -1;
+  grid-column: 1 / 5;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+.btn-toggle {
+  font-size: 1rem;
+  background-color: transparent;
+  transition: background-color 0.5s ease;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.theme-icon {
+  display: block;
+  width: 15px;
+  height: 15px;
+  top: 0;
+  left: 0;
+  margin-right: 5px;
+  border-radius: 15px;
+  background-color: #fff;
+  transition: background-color 0.5ms ease
+}
+.btn:hover {
+  background-color: #666;
+}
+.btn:focus {
+  outline: none;
+}
+/* Modo Claro */
+.light-mode {
+  background-color: #fefefe;
+}
+.light-mode .calculator {
+  background-color: #f0f0f0;
+}
+.light-mode .display {
+  background-color: #ccc;
+  color: #000;
+}
+.light-mode .btn {
+  background-color: #ccc;
+  background: linear-gradient(#ccc, #ddd);
+  color: #000;
+}
+.light-mode .btn:hover {
+  background-color: #aaa;
+  background: linear-gradient(#aaa, #bbb);
+}
+.light-mode .theme-icon {
+  background-color: #000;
+}
+.light-mode .btn-toggle {
+  font-size: 1rem;
+  background-color: transparent;
+  color: #000;
+  border: none;
+  cursor: pointer;
+}
+/* Modo Escuro */
+.dark-mode {
+  background-color: #444;
+}
+.dark-mode .calculator {
+  background-color: #242424;
+}
+.dark-mode .display {
+  background-color: #444;
+  color: #fff;
+}
+.dark-mode .btn {
+  background-color: #444;
+  background: linear-gradient(#444, #555);
+  color: #fff;
+}
+.dark-mode .btn:hover {
+  background-color: #222;
+  background: linear-gradient(#222, #333);
+}
+.dark-mode .theme-icon {
+  background-color: #fff;
+}
+.dark-mode .btn-toggle {
+  font-size: 1rem;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
