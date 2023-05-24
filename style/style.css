@@ -1,10 +1,12 @@
 /* Code Made By LaturbDevs | Vitor Almeida*/
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+* {
   margin: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 45px;
+  height: 100vh;
+  margin: 0 auto;
   font-family: Arial, sans-serif;
   background-color: #aaa;
   transition: background-color 0.5s ease;
@@ -13,6 +15,8 @@ body {
   background-color: #222;
   transition: background-color 0.5s ease;
   border-radius: 20px;
+  display: block;
+  margin: 0 auto;
   width: 400px;
   height: 500px;
   display: grid;
