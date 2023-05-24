@@ -81,6 +81,7 @@ body {
 }
 .light-mode .display {
   background-color: #ccc;
+  background: linear-gradient(#ccc, #ddd);
   color: #000;
 }
 .light-mode .btn {
@@ -111,6 +112,7 @@ body {
 }
 .dark-mode .display {
   background-color: #444;
+  background: linear-gradient(#444, #555);
   color: #fff;
 }
 .dark-mode .btn {
