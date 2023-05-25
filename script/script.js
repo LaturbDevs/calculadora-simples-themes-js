@@ -67,4 +67,3 @@ function handleButtonClick(value) {
   } else {
     addToDisplay(value);
   }
-}
