@@ -4,17 +4,18 @@
   box-sizing: border-box;
 }
 body {
-  padding: 45px;
+  padding: 15px;
   background-color: #aaa;
   transition: background-color 0.5s ease;
 }
 .calculator {
   background-color: #222;
   transition: background-color 0.5s ease;
-  border-radius: 20px;
+  border: 1px solid #000;
+  border-radius: 10px;
   margin: auto;
   max-width: 400px;
-  height: 500px;
+  height: 450px;
   display: grid;
   grid-template-columns: repeat(4, 2fr);
   gap: 2px;
@@ -78,6 +79,8 @@ body {
 }
 .light-mode .calculator {
   background-color: #f0f0f0;
+  border: 1px solid #000;
+  border-radius: 10px;
 }
 .light-mode .display {
   background-color: #ccc;
@@ -109,7 +112,9 @@ body {
 }
 .dark-mode .calculator {
   background-color: #242424;
-}
+  border: 1px solid #fff;
+  border-radius: 10px;
+} 
 .dark-mode .display {
   background-color: #444;
   background: linear-gradient(#444, #555);
