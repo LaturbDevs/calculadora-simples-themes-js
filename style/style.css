@@ -68,10 +68,10 @@ body {
   margin-right: 5px;
   border-radius: 15px;
   background-color: #fff;
-  transition: background-color 0.5ms ease
+  transition: background-color 0.5s ease
 }
 .btn:hover {
-  background-color: #666;
+  background-color: #222;
 }
 .btn:focus {
   outline: none;
